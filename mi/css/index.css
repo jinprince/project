@@ -1,0 +1,134 @@
+/* 首页的样式 */
+/* 导航条容器 */
+.bar-wrapper{
+    /* 跟父元素一样可以不屑*/
+    /* width:100%; */
+    /* 导航条高度 */
+    height:40px;
+    /* 背景颜色 */
+    background-color: #333333;
+}
+/* 设置顶部导航条容器 */
+.bar-wrapper .top-bar{
+    /* 高度跟父元素一样高 */
+    height:100%;
+    /* background-color: yellow; */
+}
+/* 设置左侧导航条 */
+.link-bar{
+    /* 向左浮动 */
+    float: left;  
+    line-height: 40px;
+    }
+  
+
+/* 设置右侧工具 */
+.info-bar,.cart-bar{
+    /* 向右浮动 */
+    float: right;
+    line-height: 40px;
+}
+/* 下载app链接 */
+.link-bar .download-app{
+    position: relative;
+
+}
+/* 鼠标移入到下载app，显示二维码 */
+.link-bar .download-app:hover .code{
+    display: block;
+}
+/* 设置左侧的二维码 */
+.link-bar .code{
+    width: 124px;
+    height: 150px;
+    text-align: center;
+    /* background-color: yellow; */
+    line-height: 0;
+    position: absolute;
+    left:-40px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+    display: none;
+}
+/* 二维码的位置 */
+.link-bar img{
+    margin: 20px;
+}
+/* 二维码下面小米商城app文字 */
+.link-bar .code span{
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+}
+/* 二维码上面的小三角样式 */
+.link-bar .arrow{
+    width: 0;
+    height: 0;
+    border: 10px solid #fff;
+    border-top:none;
+    border-color: transparent  transparent #fff;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+ /* 设置超链接样式 */
+ .bar-wrapper a{
+     /* 设置高度 */
+    height: 40px;
+    /* float: left; */
+    /* 转为行内块 */
+    display: inline-block;
+    /* 设置字体大小 */
+    font-size: 12px;
+    /* line-height: 40px; */
+    /* 设置字体颜色 */
+    color: #b0b0b0;
+    /* 去除下划线 */
+    text-decoration: none;
+}
+/* 鼠标移入的样式 */
+.bar-wrapper a:hover{
+    color: #ffffff;
+}
+ /* 小竖线的样式 */
+.bar-wrapper .line{
+    font-size: 12px;
+    color: #424242;
+    margin:0 1px;
+}
+/* 设置购物车鼠标移入样式 */
+.cart-bar:hover a{
+    background-color: #fff;
+    color: #ff6700;
+
+}
+/* 设置购物车的样式 */
+.cart-bar a{
+display: block;
+width: 120px;
+text-align: center;
+background-color: #424242;
+text-decoration:none;
+margin-left: 15px;
+}
+/* 购物车的下拉框 */
+.cart-bar .cart-info{
+    width: 316px;
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    line-height: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    right: 0;
+    z-index: 9999;
+    transform: all 0.3;
+}
+/* 当鼠标移入购物车时下拉框显现 */
+.cart-bar:hover .cart-info{
+height: 100px;
+}
+
+
